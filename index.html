@@ -1,2 +1,483 @@
-# MeiliDanshui
-Simple Static Site
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Beautiful Danshui
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <style>
+ /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
+a, .sec-contact .btn {
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+/*=Typography=*/
+html {
+  font-size: 26px;
+}
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+}
+.navbar a, .sec-about p {
+  text-align: center;
+  font-size: 22px;
+}
+.navbar a {
+  font-size: 17px;
+}
+.navbar .fa-external-link {
+  font-size: 10px;
+}
+.main-heading {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  font-size: 51px;
+}
+.container > h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.first-heading {
+  font-size: 38px !important;
+}
+.second-heading {
+  font-size: 35px !important;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+.gallery-heading {
+  font-size: 55px !important;
+}
+.sec-about a {
+  text-decoration: underline;
+}
+.sec-services h2, .sec-services p {
+  font-weight: 300;
+  text-align: center;
+}
+.sec-testimonials p {
+  font-style: italic;
+}
+.sec-contact .btn {
+  text-transform: uppercase;
+}
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+/*=Base=*/
+section {
+  padding: 5em 0;
+}
+footer {
+  padding: 3em 0;
+}
+@media screen and (max-width: 768px) and (min-width: 485px) {
+  form {
+    max-width: 70%;
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+/*=Layout=*/
+.sec-folio .row {
+  margin-bottom: 3em;
+}
+.sec-folio img {
+  max-width: 100%;
+  max-height: 350px;
+}
+/*Header*/
+.navbar-default {
+  background: #fff;
+}
+.navbar .fa-external-link {
+  vertical-align: top;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ad0000;
+}
+.navbar-default .navbar-nav > li > a:active {
+  color: #940000;
+}
+/*Main*/
+.sec-main {
+  position: relative;
+  height: 560px;
+  background: url(https://assets.codepen.io/577362/bottle-duotone-lighter) no-repeat center center;
+  background-size: cover;
+}
+.sec-main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.main-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #fff;
+}
+/*About*/
+.sec-about a {
+  color: #000;
+}
+.sec-about a:hover, .sec-about a:focus {
+  color: #ad0000;
+}
+/*Services*/
+.sec-services {
+  background: #f9f9f9;
+}
+.sec-services i {
+  display: block;
+  margin: auto;
+  width: 45px;
+}
+.sec-services .fa-paint-brush {
+  width: 64px;
+}
+.sec-services .fa-code {
+  width: 68px;
+}
+.sec-services h2 {
+  margin: 1em 0;
+}
+/*Testimonials*/
+.sec-testimonials {
+  background: #f9f9f9;
+}
+/*Contact*/
+.sec-contact .form-control:focus {
+  border-color: #ad0000;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+}
+.sec-contact .btn {
+  padding: 0.5rem 1.75rem;
+  background: #000;
+  font-size: 0.95rem;
+  color: #fff;
+}
+.sec-contact .btn:hover, .sec-contact .btn:focus {
+  background: #ad0000;
+  border-color: #7a0000;
+}
+.phone-number {
+  font-size: 70px !important;
+}
+/*Footer*/
+footer {
+  background: #000;
+}
+.soc-media-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.soc-media-ul li:not(:first-child) a {
+  margin-left: 1em;
+}
+.soc-media-ul a {
+  display: block;
+  padding: 0.5em 0.65rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.soc-media-ul a:hover, .soc-media-ul a:focus {
+  color: #ad0000;
+}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+<!-- START PEN -->
+<div class="wrapper">
+  <header role="header">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+            <span class="sr-only">Toggle Navigation</span>
+            
+            <span class="icon-bar"></span>
+            
+            <span class="icon-bar"></span>
+            
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="#" class="navbar-brand">Danshui</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right js-nav">
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#services">Services</a></li>
+
+            <li><a href="#folio">Folio</a></li>
+
+            <li><a href="#testimonials">Testimonials</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+           
+            <li><a href="http://alexsblog.org" target="_blank">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="sec-main">
+    <h1 class="main-heading">Beautiful Danshui</h1>
+  </section>
+
+  <section id="about" class="sec-about">
+    <div class="container">
+      <h1 class="first-heading">Mission</h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <p>Trash Collection · Cleaning Beaches · Disinfecting Public Bathrooms · Planting Trees · Planting Flowers · Healing Soil · Environmental Education
+           <!-- <a href="#">English</a> or <a href="#">Czech</a> version. If you want to hire me or just to talk, <a class="js-connect" href="#footer">connect</a> with me.</p>-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="sec-services">
+    <div class="container">
+      <h1 class="second-heading">SUCCESSES</h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-4">
+          <i class="fa fa-4x fa-paint-brush"></i>
+
+          <h2 class="h3">Planting Trees and Flowers</h2>
+
+          <p>我們正在學習植樹藝術。 我們每小時支付300至400TWD在淡水種植樹木和花卉。</p>
+        </div>
+
+        <div class="col-sm-4">
+          <i class="fa fa-4x fa-code"></i>
+
+          <h2 class="h3">Disinfecting Bathrooms</h2>
+
+          <p>All websites are written in valid and clean HTML5 / CSS3 &amp; JavaScript (jQuery).</p>
+        </div>
+
+        <div class="col-sm-4">
+          <i class="fa fa-4x fa-tablet"></i>
+
+          <h2 class="h3">Environmental Education</h2>
+
+          <p>All websites are responsive. They will look great on desktop, tablets and mobile phones too.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="folio" class="sec-folio">
+    <div class="container">
+      <h1 class="gallery-heading">外出走動
+</h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-md-4">
+          <img class="center-block" src="https://assets.codepen.io/577362/turquoise-girl-in-corner" />
+          <img class="center-block" src="" />
+        </div>
+
+        <div class="col-md-4">
+          <img class="center-block" src="https://assets.codepen.io/577362/blue-abstract-painting" alt="By Samuel Zeller" />
+        </div>
+
+        <div class="col-md-4">
+          <img class="center-block" src="https://source.unsplash.com/2aoVQXwLf3g/450x450" alt="By Scott Webb" />
+        </div>
+      </div>
+
+      <div class="row">
+<!--         <div class="col-md-4">
+          <img class="center-block" src="https://source.unsplash.com/o2KD7JtqTlk/450x450" alt="By Has Bonk" />
+        </div>
+ -->
+        <div class="col-md-4">
+          <img class="center-block" src="https://source.unsplash.com/TV2ET43jK0w/450x450" alt="By Scott Webb" />
+        </div>
+
+        <div class="col-md-4">
+          <img class="center-block" src="https://source.unsplash.com/lZ2LB1s_z7s/450x450" alt="By Daniel Lozano Valdés" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img class="center-block" src="https://source.unsplash.com/o4qL4FuwN6I/450x450" alt="By Anthony DELANOIX" />
+        </div>
+
+<!--         <div class="col-md-4">
+          <img class="center-block" src="https://source.unsplash.com/ej7RYC0ED_c/450x450" alt="By Patrick Pilz" />
+        </div>
+ -->
+<!--         <div class="col-md-4">
+          <img class="center-block" src="https://assets.codepen.io/577362/red-candles" alt="By Vita Vilcina" />
+        </div>
+      </div> -->
+    </div>
+  </section>
+<!-- 
+  <section id="testimonials" class="sec-testimonials">
+    <div class="container">
+      <h1>Clients said</h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-center">"Alex did great job when designing our website. It was pleasure to work with him and I'm sure we will hire him again."</p>
+
+          <p class="text-right">&mdash; Marc Andressen</p>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="text-center">"Alex proved to be truly creative designer who is able to create just stunning design I immediately fell in love with!"</p>
+
+          <p class="text-right">&mdash; Emily Cooper</p>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="text-center">"I have worked with several different people and it always seemed like a pain—luckily I found Alex Devero. Thank you Alex!"</p>
+
+          <p class="text-right">&mdash; Scott Grubber</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="contact" class="sec-contact">
+    <div class="container">
+<!--       <h1>Contact</h1> -->
+ <h1 class="phone-number">0914 031 091
+
+</h1>
+      <hr />
+<!-- 
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+          <form class="center-block" action="#" method="post">
+            <div class="form-group">
+              <label class="sr-only" for="inputName">Full name</label>
+
+              <input id="inputName" class="form-control" type="text" placeholder="Adam Smith" required />
+            </div>
+
+            <div class="form-group">
+              <label for="inputMail" class="sr-only">Email Address</label>
+
+              <input id="inputMail" class="form-control" type="email" placeholder="adam.smith@mail.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="inputMessage" class="sr-only">Your Message</label>
+
+              <textarea id="inputMessage" class="form-control" name="message" cols="30" rows="8" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-default center-block" type="submit" value="Hire me">Contact</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+  <footer id="footer">
+    <div class="container">
+      <ul class="soc-media-ul">
+        <li>
+          <a href="https://twitter.com/AlexDevero" class="fa fa-twitter" target="_blank"></a>
+        </li>
+
+        <li>
+          <a href="https://plus.google.com/u/0/+AlexDevero" class="fa fa-google-plus" target="_blank"></a>
+        </li>
+
+        <li>
+          <a href="https://cz.linkedin.com/pub/alex-devero/38/262/70/" class="fa fa-linkedin" target="_blank"></a>
+        </li>
+
+        <li>
+          <a href="https://www.behance.net/d3v3r0" class="fa fa-behance" target="_blank"></a>
+        </li>
+
+        <li>
+          <a href="mailto:example@mail.com" class="fa fa-envelope"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+        <script>
+  $(function() {
+  $('.js-nav a, .js-connect').click(function(e) {
+    e.preventDefault();
+    $('body, html').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 750);
+  });
+}); 
+    </script>
+        </body>
+    </html>
