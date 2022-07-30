@@ -15,7 +15,7 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,300,700');
 a, .sec-contact .btn {
   -webkit-transition: all 0.25s;
   -o-transition: all 0.25s;
@@ -32,21 +32,33 @@ body {
 }
 .navbar a, .sec-about p {
   text-align: center;
-  font-size: 22px;
+  font-size: 62px;
+  height: 90px;
+  padding-top: 20px;
 }
-.navbar a {
-  font-size: 17px;
+.navbar a { /*egypt nav icons size */
+  font-size: 37px;
+  padding-top: 40px !important;
 }
 .navbar .fa-external-link {
   font-size: 10px;
 }
+      
+ .navbar-brand {
+   font-size: 35px !important;
+   font-weight: 800; 
+   color: #667 !important;
+   padding-top: 30px !important;
+      }     
 .main-heading {
   font-family: 'Open sans', sans-serif;
-  font-weight: 300;
+  font-weight: 800;
   text-align: center;
   letter-spacing: 9px;
   text-transform: uppercase;
-  font-size: 51px;
+  font-size: 111px;
+  color: rgba(255,255,255,0.7) !important;
+  line-height: 495px;
 }
 .container > h1 {
   font-weight: 300;
@@ -55,7 +67,8 @@ body {
   font-size: 30px;
 }
 .first-heading {
-  font-size: 38px !important;
+  font-size: 118px !important;
+  color: #888;
 }
 .second-heading {
   font-size: 35px !important;
@@ -120,8 +133,9 @@ hr {
 .navbar .fa-external-link {
   vertical-align: top;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ad0000;
+.navbar-default .navbar-nav> li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #008080;
+  font-size: 55px;
 }
 .navbar-default .navbar-nav > li > a:active {
   color: #940000;
@@ -129,9 +143,9 @@ hr {
 /*Main*/
 .sec-main {
   position: relative;
-  height: 560px;
-  background: url(https://assets.codepen.io/577362/bottle-duotone-lighter) no-repeat center center;
-  background-size: cover;
+  height: 300px;
+  background: url(https://assets.codepen.io/577362/Purple+Plant+JAKE.png) no-repeat 10% 5%;
+  background-size: 100%;
 }
 .sec-main:after {
   content: "";
@@ -140,7 +154,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  /*background: rgba(255, 255, 255, 0.2);*/
 }
 .main-heading {
   position: absolute;
@@ -161,6 +175,11 @@ hr {
 .sec-about a:hover, .sec-about a:focus {
   color: #ad0000;
 }
+
+      .pinyin {
+      font-weight: 400;  
+      }
+      
 /*Services*/
 .sec-services {
   background: #f9f9f9;
@@ -201,6 +220,8 @@ hr {
 }
 .phone-number {
   font-size: 70px !important;
+  letter-spacing: -8px; /*-8px good */
+  word-spacing: 20px;
 }
 /*Footer*/
 footer {
@@ -228,6 +249,13 @@ footer {
 .soc-media-ul a:hover, .soc-media-ul a:focus {
   color: #ad0000;
 }
+      .center-block {
+        padding: 10px;
+        border-radius: 10px;
+        filter: hue-rotate(10deg);
+        filter: saturate(90%) contrast(110%);
+      }
+      
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -250,24 +278,24 @@ footer {
             <span class="icon-bar"></span>
           </button>
 
-          <a href="#" class="navbar-brand">Danshui</a>
+          <a href="#" class="navbar-brand"><span style='color:#aa00aa;'>美</span><span style='color:#992AD0;'>丽</span><span style='color:#6655C3;'>淡</span><span style='color:#337FB6;'>水</span></a>
         </div>
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right js-nav">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" style='color:#00a; text-shadow: 1px 1px 2px'>𓂅</a></li>
 
-            <li><a href="#about">About</a></li>
+            <li><a href="#about" style='color:#4169e2; text-shadow: 0px 0px 1px'>𓅈</a></li>
 
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services" style='color:#4139e1; text-shadow: 0px 0px 1px'>𓋹</a></li>
 
-            <li><a href="#folio">Folio</a></li>
+            <li><a href="#folio" style='color:#4139e1; text-shadow: 0px 0px 1px'>𓁹</a></li>
 
-            <li><a href="#testimonials">Testimonials</a></li>
+           <!-- <li><a href="#testimonials">8</a></li>-->
 
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" style='color:#4149c1; text-shadow: 0px 0px 1px'>𓅀</a></li> <!-- sky blue -->
            
-            <li><a href="http://alexsblog.org" target="_blank">Blog</a></li>
+         <!--   <li><a href="http://alexsblog.org" target="_blank">7</a></li>-->
           </ul>
         </div>
       </div>
@@ -275,52 +303,54 @@ footer {
   </header>
 
   <section id="home" class="sec-main">
-    <h1 class="main-heading">Beautiful Danshui</h1>
+    <h1 class="main-heading"></h1>
   </section>
 
   <section id="about" class="sec-about">
     <div class="container">
-      <h1 class="first-heading">Mission</h1>
+      <h1 class="first-heading">𓅆</h1>
 
-      <hr />
+      <hr/>
 
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
-          <p>Trash Collection · Cleaning Beaches · Disinfecting Public Bathrooms · Planting Trees · Planting Flowers · Healing Soil · Environmental Education
+          <!--<p class="english">Pick Up Trash in Danshui · Plant Trees · Design City Workshops · Mandarin, English, Cantonese, Philipine, Indonesian Language Exchange Teach Music In The Street<br><br> --> 
+          <p class="mandarin">淡水撿垃圾 · 種樹 · 設計城市工作坊 · 普通話、英語、粵語、菲律賓語、印尼語交流、 街頭音樂教學</p> <br><br>           <br><br><br><br><br><br><br><br><br><br><!--<p class="pinyin"> Dànshuǐ jiǎn lèsè· zhǒng shù· shèjì chéngshì gōngzuò fāng· pǔtōnghuà, yīngyǔ, yuèyǔ, fēilǜbīn yǔ, yìnní yǔ jiāoliú·</p>-->
            <!-- <a href="#">English</a> or <a href="#">Czech</a> version. If you want to hire me or just to talk, <a class="js-connect" href="#footer">connect</a> with me.</p>-->
         </div>
       </div>
     </div>
   </section>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <section id="services" class="sec-services">
     <div class="container">
-      <h1 class="second-heading">SUCCESSES</h1>
+      <h1 class="second-heading">3 CLEAR MISSIONS</h1>
 
       <hr />
 
       <div class="row">
         <div class="col-sm-4">
-          <i class="fa fa-4x fa-paint-brush"></i>
+          <i class="fa fa-4x fa-tras">𓃬</i>
+
+          <h2 class="h3">Keep Danshui Beautiful </h2>
+
+          <p></p>
+        </div>
+
+        <div class="col-sm-4">
+          <i class="fa fa-4x fa-tre">𓌰</i>
 
           <h2 class="h3">Planting Trees and Flowers</h2>
 
-          <p>我們正在學習植樹藝術。 我們每小時支付300至400TWD在淡水種植樹木和花卉。</p>
+          <p></p>
         </div>
 
         <div class="col-sm-4">
-          <i class="fa fa-4x fa-code"></i>
+          <i class="fa fa-4x fa-cit">𓅊</i>
 
-          <h2 class="h3">Disinfecting Bathrooms</h2>
+          <h2 class="h3">Design City Workshops</h2>
 
-          <p>All websites are written in valid and clean HTML5 / CSS3 &amp; JavaScript (jQuery).</p>
-        </div>
-
-        <div class="col-sm-4">
-          <i class="fa fa-4x fa-tablet"></i>
-
-          <h2 class="h3">Environmental Education</h2>
-
-          <p>All websites are responsive. They will look great on desktop, tablets and mobile phones too.</p>
+          <p></p>
         </div>
       </div>
     </div>
@@ -335,24 +365,24 @@ footer {
 
       <div class="row">
         <div class="col-md-4">
-          <img class="center-block" src="https://assets.codepen.io/577362/turquoise-girl-in-corner" />
+          <img class="center-block" src="https://assets.codepen.io/577362/jakeorange.jpg" />
           <img class="center-block" src="" />
         </div>
 
         <div class="col-md-4">
-          <img class="center-block" src="https://assets.codepen.io/577362/blue-abstract-painting" alt="By Samuel Zeller" />
+          <img class="center-block" src="https://assets.codepen.io/577362/SEXYLEGSTRASHAGAINSTGRASS.UNSHOPPED.2222.jpg" alt="By Samuel Zeller" />
         </div>
 
         <div class="col-md-4">
-          <img class="center-block" src="https://source.unsplash.com/2aoVQXwLf3g/450x450" alt="By Scott Webb" />
+          <img class="center-block" src="https://assets.codepen.io/577362/5STARSsexylegggsssAGAINSTSKY.jpg" alt="By Scott Webb" />
         </div>
       </div>
-
+<!--
       <div class="row">
 <!--         <div class="col-md-4">
           <img class="center-block" src="https://source.unsplash.com/o2KD7JtqTlk/450x450" alt="By Has Bonk" />
         </div>
- -->
+ 
         <div class="col-md-4">
           <img class="center-block" src="https://source.unsplash.com/TV2ET43jK0w/450x450" alt="By Scott Webb" />
         </div>
@@ -409,7 +439,7 @@ footer {
   <section id="contact" class="sec-contact">
     <div class="container">
 <!--       <h1>Contact</h1> -->
- <h1 class="phone-number">0914 031 091
+      <h1 class="phone-number"><a href="https://www.instagram.com/jakeslint/">Say Hi On <span style='color:#008080;'>I</span><span style='color:#009070;'>n</span><span style='color:#00a060;'>s</span><span style='color:#00b050;'>t</span><span style='color:#00a040;'>a</span><span style='color:#008050;'>g</span><span style='color:#0070aa;'>r</span><span style='color:#006070;'>a</span><span style='color:#005080;'>m</span></a>
 
 </h1>
       <hr />
@@ -450,7 +480,7 @@ footer {
         <li>
           <a href="https://twitter.com/AlexDevero" class="fa fa-twitter" target="_blank"></a>
         </li>
-
+<!--
         <li>
           <a href="https://plus.google.com/u/0/+AlexDevero" class="fa fa-google-plus" target="_blank"></a>
         </li>
@@ -462,7 +492,7 @@ footer {
         <li>
           <a href="https://www.behance.net/d3v3r0" class="fa fa-behance" target="_blank"></a>
         </li>
-
+-->
         <li>
           <a href="mailto:example@mail.com" class="fa fa-envelope"></a>
         </li>
